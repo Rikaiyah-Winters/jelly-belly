@@ -2,15 +2,20 @@
 
 <head>
   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='jellybeans.css') }}">
-  <link href="https://fonts.googleapis.com/css?family=Rozha+One&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display:400,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div class="header">
-    <img class="pup-logo"
+    <img class="jelly-belly-logo"
       src="https://upload.wikimedia.org/wikipedia/en/thumb/4/48/Jelly_Belly_Logo.svg/330px-Jelly_Belly_Logo.svg.png" />
     <h1>Jelly Belly Gallery</h1>
+  </div>
+  <div class="selectors">
+    <form action="/" method="POST" id="beanform">
+      <select class="bean" name="breed">
+        <option value="">Select a Group Name</option>
+      </select>
+    </form>
   </div>
   <div class="content">
     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/48/Jelly_Belly_Logo.svg/330px-Jelly_Belly_Logo.svg.png" class="jellybelylogo" />
