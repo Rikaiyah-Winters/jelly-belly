@@ -10,16 +10,11 @@
       src="https://upload.wikimedia.org/wikipedia/en/thumb/4/48/Jelly_Belly_Logo.svg/330px-Jelly_Belly_Logo.svg.png" />
     <h1>Jelly Belly Gallery</h1>
   </div>
-  <!--<div class="selectors">
-    <form action="/" method="POST" id="beanform">
-      <select class="bean" name="breed">
-        <option value="">Select a Group Name</option>
-      </select>
-    </form>
-  </div>-->
   <div class="content">
     <div>
-      <h3>{{ data }}</h3>
+      {% for bean in beans %}
+      <p>{{ bean["flavorName"] }}</p>
+      {% endfor %}
     </div>
   </div>
 </body>
