@@ -30,9 +30,9 @@
   </div>
   <div class="content">
     <div>
-      <!--{% for bean in beans %}-->
-      <p>{{bean_nom}}</p>
-      <!--{% endfor %}-->
+      {% for bean in beans %}
+      <p>{{ bean["flavorName"]}}</p>
+      {% endfor %}
     </div>
   </div>
 </body>
