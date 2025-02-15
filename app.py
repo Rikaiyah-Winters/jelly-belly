@@ -9,7 +9,7 @@ app = Flask(__name__)
 def jelly_belly_info():
   #errors = []
   response = requests.get("https://jellybellywikiapi.onrender.com/api/Beans")
-  #response.raise_for_status() # Check if the request was successful
+  #response.raise_for_status()
   response_data = response.json()
   beans_info = response_data["items"] 
   return render_template("jellybeans.html", beans = beans_info)
