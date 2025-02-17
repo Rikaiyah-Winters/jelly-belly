@@ -11,8 +11,9 @@ def jelly_belly_info():
   response = requests.get("https://jellybellywikiapi.onrender.com/api/Beans")
   #response.raise_for_status()
   response_data = response.json()
-  beans_info = response_data["items"] 
-  return render_template("jellybeans.html", beans = beans_info)
+  beans_info = response_data["items"]
+  sevenup_info = beans_info[0]
+  return render_template("jellybeans.html", beans = beans_info, sevenup_info = sevenup_info)
   
       
 

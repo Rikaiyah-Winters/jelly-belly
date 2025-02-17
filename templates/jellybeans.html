@@ -29,11 +29,11 @@
     </form>
   </div>
   <div class="content">
+    {% for key in sevenup_info %}
     <div>
-      {% for bean in beans %}
-      <p>{{ bean["flavorName"]}}</p>
-      {% endfor %}
+      <p>{{ key }}</p>
     </div>
+    {% endfor %}
   </div>
 </body>
 
