@@ -12,8 +12,8 @@ def jelly_belly_info():
   #response.raise_for_status()
   response_data = response.json()
   beans_info = response_data["items"]
-  sevenup_info = beans_info[0]
-  return render_template("jellybeans.html", beans = beans_info, sevenup_info = sevenup_info)
+  bean_7up = next((bean for bean in beans_info if bean['flavorName'] == '7Up'), None)
+  return render_template("jellybeans.html", bean=bean_7up)
   
       
 

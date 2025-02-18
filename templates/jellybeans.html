@@ -29,11 +29,12 @@
     </form>
   </div>
   <div class="content">
-    {% for key in sevenup_info %}
     <div>
-      <p>{{ key }}</p>
+      <p>{{ bean.flavorName }}</p>
+      <p>{{ bean.description }}</p>
+      <p>{{ bean.groupName }}</p>
+      <img src="{{ bean.imgUrl }}" alt="7Up Jelly Belly" >
     </div>
-    {% endfor %}
   </div>
 </body>
 
