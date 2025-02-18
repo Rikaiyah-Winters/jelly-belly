@@ -14,27 +14,25 @@
     <form action="/" method="POST" id="beanform">
       <select class="bean-selector" name="bean-flavor">
         <option value="">Select a Group Name</option>
-        <option value="7up">7Up</option>
-        <option value="a&w-cream-soda">A&W Cream Soda</option>
-        <option value="a&w-root-beer">A&W Root Beer</option>
-        <option value="acai-berry">Acai Berry</option>
-        <option value="apple-pie-a-la-cold-stone">Apple Pie A La Cold Stone</opttion>
-        <option value="barbados-cherry">Barbados Cherry</option>
-        <option value="blueberry">Blueberry</option>
-        <option value="bubble-gum">Bubble Gum</option>
-        <option value="buttered-popcorn">Buttered Popcorn</option>
-        <option value="cantaloupe">Cantaloupe</option>
+        <option value="1">7Up</option>
+        <option value="2">A&W Cream Soda</option>
+        <option value="3">A&W Root Beer</option>
+        <option value="4">Acai Berry</option>
+        <option value="5">Apple Pie A La Cold Stone</option>
+        <option value="6">Barbados Cherry</option>
+        <option value="7">Blueberry</option>
+        <option value="8">Bubble Gum</option>
+        <option value="9">Buttered Popcorn</option>
+        <option value="10">Cantaloupe</option>
       </select>
       <button type="submit" form="beanform" value="Submit">Submit</button>
     </form>
   </div>
   <div class="content">
-    <div>
-      <p>{{ bean.flavorName }}</p>
-      <p>{{ bean.description }}</p>
-      <p>{{ bean.groupName }}</p>
-      <img src="{{ bean.imgUrl }}" alt="7Up Jelly Belly" >
-    </div>
+    {% if bean %}
+    <p>{{ bean["flavorName"] }}</p>
+    <p>{{ bean["description"] }}</p>
+    {% endif %}
   </div>
 </body>
 
