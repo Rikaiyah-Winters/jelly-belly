@@ -10,6 +10,8 @@
       src="https://upload.wikimedia.org/wikipedia/en/thumb/4/48/Jelly_Belly_Logo.svg/330px-Jelly_Belly_Logo.svg.png" />
     <h1>Jelly Belly Gallery</h1>
   </div>
+  <div class="errors">
+  </div>
   <div class="selectors">
     <form action="/" method="POST" id="beanform">
       <select class="bean-selector" name="bean-flavor">
@@ -39,6 +41,10 @@
     </form>
   </div>
   <div class="content">
+    {% for error in errors %}
+      <div class="error">{{error}}</div>
+    {% endfor %}
+
     {% if bean %}
     <img class="jelly-bean-pic" src="{{ bean['imageUrl']}}" alt="{{ bean['flavorName']}}" >
     <p>{{ bean["flavorName"] }}</p>
