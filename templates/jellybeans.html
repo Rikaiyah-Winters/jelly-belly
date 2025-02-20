@@ -24,12 +24,23 @@
         <option value="8">Bubble Gum</option>
         <option value="9">Buttered Popcorn</option>
         <option value="10">Cantaloupe</option>
+        <option value="11">Cappuccino</option>
+        <option value="12">Caramel Corn</option>
+        <option value="13">Blueberry</option>
+        <option value="14">Chocolate Devotion®</option>
+        <option value="15">Chocolate Pudding</option>
+        <option value="16">Cinnamon</option>
+        <option value="17">Cinnamon Apple Filled</option>
+        <option value="18">Coconut</option>
+        <option value="19">Cotton Candy</option>
+        <option value="20">Cranberry</option>
       </select>
       <button type="submit" form="beanform" value="Submit">Submit</button>
     </form>
   </div>
   <div class="content">
     {% if bean %}
+    <img class="jelly-bean-pic" src="{{ bean['imageUrl']}}" alt="{{ bean['flavorName']}}" >
     <p>{{ bean["flavorName"] }}</p>
     <p>{{ bean["description"] }}</p>
     {% endif %}

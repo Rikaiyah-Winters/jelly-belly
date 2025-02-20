@@ -90,13 +90,15 @@ button:hover {
 
 select.dog-selector.option {
   text-transform: capitalize;
-} */
+} 
 
 .content {
-  /* display:flex;
-  flex-flow: row wrap; */
+  display:flex;
+  flex-flow: row wrap; 
 
 }
+*/
+
 
 .dogcontainer {
   width: 500px;
@@ -110,4 +112,9 @@ select.dog-selector.option {
   width: 100%;
   height: auto;
 
+}
+
+.jelly-bean-pic {
+  width: 310px;
+  height: 200px;
 }
