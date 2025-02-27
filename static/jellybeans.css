@@ -89,10 +89,7 @@ button:hover {
 .dog-selector {
   text-transform: capitalize;
 }
-
-select.dog-selector.option {
-  text-transform: capitalize;
-} */
+*/
 
 .content {
   padding-top: 5px;
