@@ -92,14 +92,13 @@ button:hover {
 
 select.dog-selector.option {
   text-transform: capitalize;
-} 
+} */
 
 .content {
-  display:flex;
-  flex-flow: row wrap; 
+  padding-top: 5px;
 
 }
-*/
+
 
 
 .dogcontainer {
