@@ -33,11 +33,6 @@ body {
   background-color: #ffc8dd;
 }
 
-.pup-logo {
-  width: 125px;
-  margin: 40px 20px;
-}
-
 .selectors {
   display: flex;
   flex-direction: row;
