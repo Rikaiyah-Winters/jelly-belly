@@ -37,8 +37,8 @@
 
     {% if bean %}
     <img class="jelly-bean-pic" src="{{ bean['imageUrl']}}" alt="{{ bean['flavorName']}}" >
-    <p>{{ bean["flavorName"] }}</p>
-    <p>{{ bean["description"] }}</p>
+    <p id="flavor-name">{{ bean["flavorName"] }}</p>
+    <p id="flavor-description">{{ bean["description"] }}</p>
     {% endif %}
   </div>
 </body>
