@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request
 import requests
-from bean_flavors import prettify_bean_flavor
 
 # Initialize the Flask application
 app = Flask(__name__)
